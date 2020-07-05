@@ -1,18 +1,170 @@
-*/Raleway Bold - лого
-  Roboto Medium
-  Roboto Black - h1
-  Roboto Bold - основной текст заголовков
-  Roboto Regular - основной текст 
- /*
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --title-dark-theme-color: #ffffff;
+  --title-light-theme-color: #212121;
+  --accent-color: #2196f3;
+  --text-light-theme-color: #757575;
+}
 
- #000000 - черный из лого
- #212121 - навигация,заголоовки в секции особенности,заголовки h2 всех секций, заголовки h3 в секции команда
- #757575 - адресс,абзацы секции особенности,абзацы в секции команда
- #2196F3 - синяя часть лого, навигация и адресс при наведении, фон кнопки в герое,иконки клиентов при наведении
- #FFFFFF - белая часть лого в подвале, h1, текст кнопки в герое,абзацы в секции услуги,часть адресса в подвале,присоединяйтесь из подвала
- rgba(255, 255, 255, 0.6) - вторая чвсть адресса в подвале
- #AFB1B8 - иконки клиентов
+body {
+  background-color: #ffffff;
+  font-family: var(--main-font);
+  font-size: 14px;
+  color: var(--text-light-theme-color);
+}
 
+.link {
+  text-decoration: none;
+}
 
+.list {
+  list-style: none;
+}
 
+/*шапка-сайта*/
 
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.navigation-list-link,
+.header-tel,
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel,
+.header-mail {
+  color: var(--text-light-theme-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/*герой-секция*/
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36x;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /*color: var(--title-dark-theme-color);*/
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--title-dark-theme-color);
+  background-color: #2196f3;
+}
+
+/*особенности*/
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-light-theme-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-light-theme-color);
+}
+
+/*услуги*/
+
+.title {
+  font-weight: 700d;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.services .subtitle {
+  /*color: var(--title-dark-theme-color);*/
+}
+
+/*команда*/
+
+.team-list-item-name,
+.team-list-item-position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.team-list-item-position {
+  font-weight: 400;
+  color: var(--text-light-theme-color);
+}
+
+/*клиенты*/
+
+/*подвал-сайта*/
+.footer-address,
+.footer-tel,
+.footer-mail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /*color: var(--title-dark-theme-color);*/
+}
+
+.footer-tel,
+.footer-mail {
+  /*color: rgba(255, 255, 255, 0.6);*/
+}
+
+.invitation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /*color: var(--title-dark-theme-color);*/
+}
