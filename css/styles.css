@@ -11,6 +11,7 @@ body {
   background-color: #ffffff;
   font-family: var(--main-font);
   font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--text-light-theme-color);
 }
 
@@ -29,7 +30,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
 }
 
@@ -54,6 +54,7 @@ body {
 
 .header-tel,
 .header-mail {
+  font-style: normal;
   color: var(--text-light-theme-color);
 }
 
@@ -97,7 +98,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-light-theme-color);
 }
@@ -106,7 +106,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--text-light-theme-color);
 }
 
@@ -117,7 +116,6 @@ body {
   font-size: 36px;
   line-height: 1.67;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
 }
 
@@ -133,7 +131,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
 }
 
@@ -145,13 +142,18 @@ body {
 /*клиенты*/
 
 /*подвал-сайта*/
+
+.logo .logo-studio {
+  /* color: #ffffff*/
+}
+
 .footer-address,
 .footer-tel,
 .footer-mail {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   /*color: var(--title-dark-theme-color);*/
 }
 
@@ -164,7 +166,44 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  /*color: var(--title-dark-theme-color);*/
+}
+
+/*портфолио*/
+
+.portfolio-filter-list-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.portfolio-filter-list-button:hover,
+.portfolio-filter-list-button:focus {
+  color: var(--title-dark-theme-color);
+}
+
+.portfolio-gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-light-theme-color);
+}
+
+.portfolio-gallery-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-light-theme-color);
+}
+
+.portfolio-gallery-description-img {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
   /*color: var(--title-dark-theme-color);*/
 }
